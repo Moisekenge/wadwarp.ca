@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>window.__resources={"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"assets/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"assets/react-dom.production.min.js"};</script>
+<script src="assets/app.js"></script>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Wadley Moise | Embedded &amp; Systems Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<style>/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/font-01.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/font-02.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/font-03.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/font-04.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/font-03.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/font-04.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/font-03.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/font-04.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/font-03.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/font-04.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-05.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-06.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-07.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-08.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-09.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-10.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-11.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-12.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-13.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-14.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/font-09.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/font-10.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/font-11.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/font-12.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/font-13.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/font-14.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:#0b1f33;color:#14304a;font-family:"Instrument Sans",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#8fc1e9;text-decoration:none}
+a:hover{color:#e8f1f9}
+button{font:inherit;color:inherit;cursor:pointer}
+summary{list-style:none;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+details[open] > summary [data-plus]{transform:rotate(45deg)}
+::selection{background:#2f6f9f;color:#fff}
+[data-scroll]::-webkit-scrollbar{display:none}
+[data-scroll]{scrollbar-width:none}
+[data-reveal]{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes drift{from{transform:scale(1.08) translate3d(0,0,0)}to{transform:scale(1.12) translate3d(-1.6%,-.8%,0)}}
+@keyframes blink{50%{opacity:0}}
+@keyframes marquee{to{transform:translateX(-50%)}}
+@keyframes progress{from{width:0}to{width:100%}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(47,111,159,.45)}70%{box-shadow:0 0 0 8px rgba(47,111,159,0)}}
+@keyframes flash{0%,86%{opacity:0}87%{opacity:.9}88%{opacity:.15}89.5%{opacity:.7}91%{opacity:0}94%{opacity:0}94.6%{opacity:.4}95.4%{opacity:0}100%{opacity:0}}
+@keyframes faultflash{0%{background:rgba(226,96,72,.55)}100%{background:rgba(226,96,72,.18)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:#0b1f33;color:#e8f1f9;font-size:16px;line-height:1.6;overflow-x:clip">
+
+  <!-- FLOATING NAV -->
+  <nav aria-label="Section navigation" data-scroll="1" style="position:fixed;top:12px;left:50%;z-index:50;display:flex;align-items:center;gap:4px;padding:5px;max-width:calc(100vw - 24px);overflow-x:auto;white-space:nowrap;box-sizing:border-box;border-radius:999px;background:rgba(11,31,51,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(160,196,228,.22);box-shadow:0 10px 30px rgba(0,0,0,.35);translate:-50% {{ navY }};opacity:{{ navOpacity }};transition:translate .5s cubic-bezier(.2,.7,.2,1),opacity .4s;pointer-events:{{ navEvents }}">
+    <a href="#top" aria-label="Top" style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:22px;line-height:1;padding:6px 10px 6px 12px;color:#e8f1f9">wm<span style="color:#8fc1e9">.</span></a>
+    <a href="#work" style="font-size:13px;font-weight:500;padding:12px 14px;border-radius:999px;color:{{ navWorkC }};background:{{ navWorkBg }};transition:background .3s,color .3s" style-hover="color:#e8f1f9">Kernel</a>
+    <a href="#lab" style="font-size:13px;font-weight:500;padding:12px 14px;border-radius:999px;color:{{ navLabC }};background:{{ navLabBg }};transition:background .3s,color .3s" style-hover="color:#e8f1f9">Fault lab</a>
+    <a href="#notes" style="font-size:13px;font-weight:500;padding:12px 14px;border-radius:999px;color:{{ navNotesC }};background:{{ navNotesBg }};transition:background .3s,color .3s" style-hover="color:#e8f1f9">Notes</a>
+    <a href="#tooling" style="font-size:13px;font-weight:500;padding:12px 14px;border-radius:999px;color:{{ navToolC }};background:{{ navToolBg }};transition:background .3s,color .3s" style-hover="color:#e8f1f9">Tooling</a>
+    <a href="#contact" style="font-size:13px;font-weight:600;padding:12px 16px;border-radius:999px;color:#0b1f33;background:#8fc1e9;margin-left:4px" style-hover="background:#fff;color:#0b1f33">Connect</a>
+  </nav>
+
+  <!-- HERO -->
+  <section data-screen-label="Hero" id="top" ref="{{ heroRef }}" style="position:relative;isolation:isolate;overflow:hidden;min-height:min(100svh,1000px);display:flex;flex-direction:column;background:#cfe2f4">
+    <div ref="{{ skyRef }}" aria-hidden="true" style="position:absolute;inset:-5%;z-index:-2;background-image:url(&quot;assets/hero.png&quot;);background-size:cover;background-position:center 55%;background-repeat:no-repeat;animation:drift 50s ease-in-out infinite alternate;transition:translate 1.4s cubic-bezier(.2,.7,.2,1)"></div>
+    <div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 45% 40% at 64% 12%,rgba(225,238,255,.75),rgba(225,238,255,0) 70%);opacity:0;animation:flash 12s linear infinite"></div>
+    <canvas ref="{{ rainRef }}" aria-hidden="true" style="position:absolute;inset:0;z-index:-1;width:100%;height:100%;pointer-events:none;mix-blend-mode:screen;opacity:.85"></canvas>
+    <div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(11,31,51,0) 0%,rgba(11,31,51,0) 74%,rgba(11,31,51,.55) 90%,#0b1f33 100%)"></div>
+
+    <header style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px 28px;padding:26px clamp(20px,5vw,64px)">
+      <a href="#top" aria-label="Wadley Moise, home" style="display:flex;align-items:center;gap:12px;color:#14304a;font-weight:600;font-size:15px">
+        <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:30px;line-height:1">wm<span style="color:#2f6f9f">.</span></span>
+        <span>Wadley Moise</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em">
+        <span style="display:inline-flex;align-items:center;gap:8px;color:#1f4f74;border:1px solid rgba(20,48,74,.22);border-radius:999px;padding:8px 14px;background:rgba(255,255,255,.5)"><span style="width:7px;height:7px;border-radius:50%;background:#2f9f6f;animation:pulse 2.4s infinite"></span>OPEN TO EMBEDDED / SYSTEMS ROLES</span>
+        <a href="https://github.com/blackbeltwad" target="_blank" rel="noopener noreferrer" style="color:#14304a;border:1px solid rgba(20,48,74,.22);border-radius:999px;padding:8px 14px;background:rgba(255,255,255,.5);transition:background .2s" style-hover="background:#fff">GITHUB ↗</a>
+        <a href="https://ca.linkedin.com/in/wadley-moise-46587332b" target="_blank" rel="noopener noreferrer" style="color:#14304a;border:1px solid rgba(20,48,74,.22);border-radius:999px;padding:8px 14px;background:rgba(255,255,255,.5);transition:background .2s" style-hover="background:#fff">LINKEDIN ↗</a>
+      </div>
+    </header>
+
+    <div style="flex:1;display:grid;align-content:end;gap:28px;padding:clamp(60px,9vh,110px) clamp(20px,5vw,64px) clamp(40px,6vh,64px);max-width:1400px;width:100%;margin:0 auto;box-sizing:border-box">
+      <p style="margin:0;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:#0f2a40;animation:rise .8s cubic-bezier(.2,.7,.2,1) both">EMBEDDED SYSTEMS · BARE-METAL SOFTWARE · CS &amp; DATA SCIENCE STUDENT</p>
+      <h1 style="margin:0;color:#0f2a40;font-size:clamp(50px,9vw,150px);line-height:.94;letter-spacing:-.05em;font-weight:500;text-wrap:balance;max-width:11ch;animation:rise .9s .08s cubic-bezier(.2,.7,.2,1) both">Close to the metal.<br><span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;color:#f2f7fc;letter-spacing:-.02em;text-shadow:0 2px 18px rgba(11,31,51,.45)">Built to go further.</span></h1>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:28px;align-items:end;animation:rise .9s .18s cubic-bezier(.2,.7,.2,1) both">
+        <p style="margin:0;max-width:52ch;font-size:clamp(16px,1.3vw,19px);line-height:1.6;color:#0f2a40;text-wrap:pretty">I write real-time kernels, hardware tooling, and the systems underneath — directly against the silicon, with no HAL between me and the registers. Currently: <a href="#work" style="color:#14304a;border-bottom:1px solid #8fb0c9" style-hover="color:#2f6f9f;border-color:#2f6f9f">Fleurr-OS</a>, a from-scratch RTOS kernel for Cortex-M7 and AVR.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;justify-self:end;max-width:100%">
+          <a href="#work" style="display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;background:#14304a;color:#fff;font-size:14px;font-weight:600;box-shadow:0 8px 24px rgba(20,48,74,.22);transition:transform .25s,background .25s" style-hover="background:#2f6f9f;transform:translateY(-2px)">Explore the kernel <span aria-hidden="true">↓</span></a>
+          <a href="https://ca.linkedin.com/in/wadley-moise-46587332b" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;min-height:52px;padding:0 22px;border-radius:999px;border:1px solid rgba(20,48,74,.3);background:rgba(255,255,255,.55);color:#14304a;font-size:14px;font-weight:600;transition:transform .25s,background .25s" style-hover="background:#fff;transform:translateY(-2px)">Get in touch</a>
+        </div>
+      </div>
+    </div>
+
+    <div aria-hidden="true" style="border-top:1px solid rgba(160,196,228,.18);padding:14px 0;overflow:hidden;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:#8fb3d4;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)">{{ marquee }}</div>
+  </section>
+
+  <!-- 01 KERNEL -->
+  <section data-screen-label="Flagship kernel" id="work" style="max-width:1400px;margin:0 auto;padding:clamp(80px,10vw,140px) clamp(20px,5vw,64px) 0;box-sizing:border-box">
+    <div style="display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,80px);border-top:1px solid #4a7398;padding-top:28px">
+      <div style="flex:1 1 220px;display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;color:#8fb3d4">
+        <span>01 — FLAGSHIP</span>
+        <span style="color:#7f9fbc">FLEURR-OS · RTOS KERNEL</span>
+        <span style="margin-top:18px;display:inline-flex;align-items:center;gap:8px;width:max-content;font-family:'Instrument Sans',sans-serif;letter-spacing:0;font-size:12px;font-weight:600;color:#8fe0b4;background:rgba(47,159,111,.18);border-radius:999px;padding:5px 11px"><span style="width:6px;height:6px;border-radius:50%;background:#2f9f6f"></span>Core kernel complete</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;width:max-content;font-family:'Instrument Sans',sans-serif;letter-spacing:0;font-size:12px;font-weight:600;color:#f0c46a;background:rgba(210,154,43,.18);border-radius:999px;padding:5px 11px"><span style="width:6px;height:6px;border-radius:50%;background:#d29a2b"></span>2 items open</span>
+      </div>
+      <div style="flex:3 1 480px;min-width:0" data-reveal="1">
+        <h2 style="margin:0 0 22px;font-size:clamp(40px,5.2vw,78px);line-height:1;letter-spacing:-.045em;font-weight:500;text-wrap:balance">A bare-metal preemptive RTOS kernel, <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;color:#8fc1e9">written from scratch</span> for two architectures.</h2>
+        <p style="margin:0;max-width:64ch;font-size:17px;line-height:1.7;color:#a9c1d6;text-wrap:pretty">Built first on the ATmega328P, then ported and significantly expanded onto a NUCLEO-F767ZI (STM32, Cortex-M7). Drivers and kernel are written directly against the hardware — no HAL, no Arduino libraries. One kernel, two <code style="font-family:'JetBrains Mono',monospace;font-size:.86em;background:rgba(143,193,233,.16);border-radius:4px;padding:2px 6px">port_*</code> layers, selected at build time.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(max(140px,calc(33.4% - 1px)),1fr));gap:1px;background:#24405a;border:1px solid #24405a;border-radius:12px;overflow:hidden;margin-top:36px">
+          <div style="background:#12293f;padding:20px 22px;display:flex;flex-direction:column;gap:4px"><strong style="font-size:34px;line-height:1;font-weight:500;letter-spacing:-.04em">O(1)</strong><span style="font-size:12px;color:#a9c1d6">Ready-task selection</span></div>
+          <div style="background:#12293f;padding:20px 22px;display:flex;flex-direction:column;gap:4px"><strong style="font-size:34px;line-height:1;font-weight:500;letter-spacing:-.04em">32</strong><span style="font-size:12px;color:#a9c1d6">Priority levels</span></div>
+          <div style="background:#12293f;padding:20px 22px;display:flex;flex-direction:column;gap:4px"><strong style="font-size:34px;line-height:1;font-weight:500;letter-spacing:-.04em">2</strong><span style="font-size:12px;color:#a9c1d6">Architecture ports</span></div>
+          <div style="background:#12293f;padding:20px 22px;display:flex;flex-direction:column;gap:4px"><strong style="font-size:34px;line-height:1;font-weight:500;letter-spacing:-.04em">0</strong><span style="font-size:12px;color:#a9c1d6">HAL dependencies</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLORER -->
+    <div data-reveal="1" style="margin-top:clamp(48px,6vw,80px);border:1px solid #2a4d6e;background:#12293f;border-radius:18px;box-shadow:0 30px 80px rgba(0,0,0,.35);overflow:hidden">
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:16px 22px;border-bottom:1px solid #24405a;background:#0f2438;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;color:#8fb3d4">
+        <span style="display:inline-flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:#8fc1e9"></span>ARCHITECTURE EXPLORER</span>
+        <span style="color:#7f9fbc">CLICK A SUBSYSTEM · SWITCH TARGET</span>
+        <div role="group" aria-label="Target architecture" style="margin-left:auto;flex:0 0 auto;display:inline-flex;border:1px solid #24405a;border-radius:999px;padding:3px;background:#12293f;gap:3px">
+          <button sc-camel-on-click="{{ pickCortex }}" aria-pressed="{{ isCortex }}" style="border:0;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;font-family:'Instrument Sans',sans-serif;letter-spacing:0;background:{{ cortexBg }};color:{{ cortexC }};transition:background .25s,color .25s">Cortex-M7</button>
+          <button sc-camel-on-click="{{ pickAvr }}" aria-pressed="{{ isAvr }}" style="border:0;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;font-family:'Instrument Sans',sans-serif;letter-spacing:0;background:{{ avrBg }};color:{{ avrC }};transition:background .25s,color .25s">AVR</button>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));min-height:420px">
+        <div role="tablist" aria-label="Kernel subsystem" style="display:flex;flex-direction:column;border-right:1px solid #24405a">
+          <button role="tab" sc-camel-on-click="{{ pickSched }}" sc-camel-on-mouse-enter="{{ hoverSched }}" aria-selected="{{ isSched }}" style="text-align:left;background:{{ schedBg }};border:0;border-bottom:1px solid #24405a;padding:22px 24px;display:grid;grid-template-columns:36px 1fr auto;gap:14px;align-items:start;transition:background .25s"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7f9fbc;padding-top:4px">01</span><span><span style="display:block;font-size:18px;font-weight:600;letter-spacing:-.02em;color:{{ schedC }}">Scheduler</span><span style="display:block;font-size:13px;color:#a9c1d6;margin-top:3px">Priority buckets · bitmap + CLZ</span></span><span aria-hidden="true" style="color:#8fc1e9;opacity:{{ schedArrow }};transition:opacity .25s">→</span></button>
+          <button role="tab" sc-camel-on-click="{{ pickIso }}" sc-camel-on-mouse-enter="{{ hoverIso }}" aria-selected="{{ isIso }}" style="text-align:left;background:{{ isoBg }};border:0;border-bottom:1px solid #24405a;padding:22px 24px;display:grid;grid-template-columns:36px 1fr auto;gap:14px;align-items:start;transition:background .25s"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7f9fbc;padding-top:4px">02</span><span><span style="display:block;font-size:18px;font-weight:600;letter-spacing:-.02em;color:{{ isoC }}">Isolation</span><span style="display:block;font-size:13px;color:#a9c1d6;margin-top:3px">Sliding MPU region · SVC · DTCM</span></span><span aria-hidden="true" style="color:#8fc1e9;opacity:{{ isoArrow }};transition:opacity .25s">→</span></button>
+          <button role="tab" sc-camel-on-click="{{ pickSw }}" sc-camel-on-mouse-enter="{{ hoverSw }}" aria-selected="{{ isSw }}" style="text-align:left;background:{{ swBg }};border:0;border-bottom:1px solid #24405a;padding:22px 24px;display:grid;grid-template-columns:36px 1fr auto;gap:14px;align-items:start;transition:background .25s"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7f9fbc;padding-top:4px">03</span><span><span style="display:block;font-size:18px;font-weight:600;letter-spacing:-.02em;color:{{ swC }}">Context switch</span><span style="display:block;font-size:13px;color:#a9c1d6;margin-top:3px">Exception-driven · custom stack frames</span></span><span aria-hidden="true" style="color:#8fc1e9;opacity:{{ swArrow }};transition:opacity .25s">→</span></button>
+          <button role="tab" sc-camel-on-click="{{ pickSync }}" sc-camel-on-mouse-enter="{{ hoverSync }}" aria-selected="{{ isSync }}" style="text-align:left;background:{{ syncBg }};border:0;border-bottom:1px solid #24405a;padding:22px 24px;display:grid;grid-template-columns:36px 1fr auto;gap:14px;align-items:start;transition:background .25s"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7f9fbc;padding-top:4px">04</span><span><span style="display:block;font-size:18px;font-weight:600;letter-spacing:-.02em;color:{{ syncC }}">Synchronization</span><span style="display:block;font-size:13px;color:#a9c1d6;margin-top:3px">Mutexes · semaphores · queues</span></span><span aria-hidden="true" style="color:#8fc1e9;opacity:{{ syncArrow }};transition:opacity .25s">→</span></button>
+          <div style="flex:1;padding:18px 24px;display:flex;align-items:end;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:#7f9fbc">{{ autoLabel }}</div>
+        </div>
+        <div style="display:flex;flex-direction:column;min-width:0">
+          <div role="tabpanel" style="flex:1;padding:26px;background:radial-gradient(circle,rgba(143,193,233,.14) 1px,transparent 1px) 0 0 / 14px 14px;display:flex;align-items:center">
+            <div style="width:100%">
+              <sc-if value="{{ vScheduler }}" hint-placeholder-val="{{ true }}">
+                <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px">
+                  <div style="display:flex;align-items:center;gap:12px"><span style="width:32px;color:#7fa3c2">P31</span><span style="flex:1;text-align:center;padding:10px;border-radius:6px;border:1px solid #8fc1e9;background:#1d4266;color:#e8f1f9;font-weight:500">Task A · next</span><span style="flex:1;text-align:center;padding:10px;border-radius:6px;border:1px solid #2e4f6e;background:#12293f;color:#a9c1d6">Task B</span></div>
+                  <div style="display:flex;align-items:center;gap:12px"><span style="width:32px;color:#7fa3c2">P16</span><span style="flex:1;text-align:center;padding:10px;border-radius:6px;border:1px solid #2e4f6e;background:#12293f;color:#a9c1d6">Task C</span><span style="flex:1;text-align:center;padding:10px;border-radius:6px;border:1px dashed #2e4f6e;color:#7d9ab5">empty</span></div>
+                  <div style="display:flex;align-items:center;gap:12px"><span style="width:32px;color:#7fa3c2">P00</span><span style="flex:1;text-align:center;padding:10px;border-radius:6px;border:1px solid #2e4f6e;background:#12293f;color:#a9c1d6">Idle</span><span style="flex:1;text-align:center;padding:10px;border-radius:6px;border:1px dashed #2e4f6e;color:#7d9ab5">empty</span></div>
+                  <div style="display:flex;align-items:center;gap:10px;margin-top:12px;padding:10px 12px;border-radius:6px;background:#8fc1e9;color:#0b1f33;flex-wrap:wrap;overflow-wrap:anywhere"><span style="color:#1d4266">bitmap</span><span>1000 0000 0000 0001 0000 0000 0000 0001</span><span style="margin-left:auto;color:#1d4266">clz → 0 → P31</span></div>
+                </div>
+              </sc-if>
+              <sc-if value="{{ vMemory }}" hint-placeholder-val="{{ false }}">
+                <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px">
+                  <div style="display:flex;justify-content:space-between;gap:10px;padding:13px 14px;border-radius:6px;background:#8fc1e9;color:#0b1f33"><span>KERNEL · TCBs · STACKS · DTCM</span><span>PRIVILEGED ONLY</span></div>
+                  <div style="display:flex;justify-content:space-between;gap:10px;padding:13px 14px;border-radius:6px;border:1px solid #8fc1e9;background:#1d4266;color:#e8f1f9"><span>ACTIVE TASK STACK ← MPU region</span><span>UNPRIV R/W</span></div>
+                  <div style="display:flex;justify-content:space-between;gap:10px;padding:13px 14px;border-radius:6px;border:1px solid #2e4f6e;background:#12293f;color:#a9c1d6"><span>OTHER TASK STACKS</span><span>NO ACCESS</span></div>
+                  <div style="display:flex;justify-content:space-between;gap:10px;padding:13px 14px;border-radius:6px;border:1px dashed #2e4f6e;color:#a9c1d6"><span>SVC → CONTROL.nPRIV</span><span>ONLY WAY UP</span></div>
+                </div>
+              </sc-if>
+              <sc-if value="{{ vAvrMemory }}" hint-placeholder-val="{{ false }}">
+                <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px">
+                  <div style="display:flex;justify-content:space-between;gap:10px;padding:13px 14px;border-radius:6px;border:1px solid #2e4f6e;background:#12293f;color:#a9c1d6"><span>ATmega328P · 2 KB SRAM</span><span>AVR PORT</span></div>
+                  <div style="display:flex;justify-content:space-between;gap:10px;padding:13px 14px;border-radius:6px;border:1px solid #8fc1e9;background:#1d4266;color:#e8f1f9"><span>SHARED KERNEL API · OPAQUE HANDLES</span><span>SAME CODE</span></div>
+                  <div style="display:flex;justify-content:space-between;gap:10px;padding:13px 14px;border-radius:6px;border:1px dashed #2e4f6e;color:#7d9ab5"><span>HARDWARE MPU</span><span>NOT PRESENT</span></div>
+                </div>
+              </sc-if>
+              <sc-if value="{{ vCortexFlow }}" hint-placeholder-val="{{ false }}">
+                <div style="display:flex;flex-direction:column;gap:10px;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center">
+                  <div style="display:grid;grid-template-columns:minmax(0,1fr) 16px minmax(0,1fr) 16px minmax(0,1fr);gap:6px;align-items:center;overflow-wrap:anywhere;font-size:11px"><span style="padding:14px 6px;border:1px solid #2e4f6e;border-radius:6px;background:#12293f">SysTick</span><span style="color:#7fa3c2">→</span><span style="padding:14px 6px;border:1px solid #8fc1e9;border-radius:6px;background:#1d4266">PendSV</span><span style="color:#7fa3c2">→</span><span style="padding:14px 6px;border:1px solid #2e4f6e;border-radius:6px;background:#12293f">save r4–r11</span></div>
+                  <div style="display:grid;grid-template-columns:minmax(0,1fr) 16px minmax(0,1fr) 16px minmax(0,1fr);gap:6px;align-items:center;overflow-wrap:anywhere;font-size:11px"><span style="padding:14px 6px;border:1px solid #2e4f6e;border-radius:6px;background:#12293f">pick next</span><span style="color:#7fa3c2">→</span><span style="padding:14px 6px;border:1px solid #8fc1e9;border-radius:6px;background:#1d4266">reprogram MPU</span><span style="color:#7fa3c2">→</span><span style="padding:14px 6px;border:1px solid #8fc1e9;border-radius:6px;background:#8fc1e9;color:#0b1f33">EXC_RETURN · PSP</span></div>
+                </div>
+              </sc-if>
+              <sc-if value="{{ vAvrFlow }}" hint-placeholder-val="{{ false }}">
+                <div style="display:flex;flex-direction:column;gap:10px;font-family:'JetBrains Mono',monospace;font-size:12px;text-align:center">
+                  <div style="display:grid;grid-template-columns:minmax(0,1fr) 16px minmax(0,1fr) 16px minmax(0,1fr);gap:6px;align-items:center;overflow-wrap:anywhere;font-size:11px"><span style="padding:14px 6px;border:1px solid #2e4f6e;border-radius:6px;background:#12293f">TIMER1_COMPA</span><span style="color:#7fa3c2">→</span><span style="padding:14px 6px;border:1px solid #8fc1e9;border-radius:6px;background:#1d4266">push r0–r31 · SREG</span><span style="color:#7fa3c2">→</span><span style="padding:14px 6px;border:1px solid #2e4f6e;border-radius:6px;background:#12293f">save SP → TCB</span></div>
+                  <div style="display:grid;grid-template-columns:minmax(0,1fr) 16px minmax(0,1fr) 16px minmax(0,1fr);gap:6px;align-items:center;overflow-wrap:anywhere;font-size:11px"><span style="padding:14px 6px;border:1px solid #2e4f6e;border-radius:6px;background:#12293f">load next SP</span><span style="color:#7fa3c2">→</span><span style="padding:14px 6px;border:1px solid #8fc1e9;border-radius:6px;background:#1d4266">pop frame</span><span style="color:#7fa3c2">→</span><span style="padding:14px 6px;border:1px solid #8fc1e9;border-radius:6px;background:#8fc1e9;color:#0b1f33">RETI</span></div>
+                </div>
+              </sc-if>
+              <sc-if value="{{ vSync }}" hint-placeholder-val="{{ false }}">
+                <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px">
+                  <div style="display:grid;grid-template-columns:minmax(80px,110px) minmax(0,1fr);gap:10px;align-items:center"><span style="color:#7fa3c2">mutex</span><span style="display:flex;gap:6px;flex-wrap:wrap"><span style="padding:8px 10px;border-radius:6px;border:1px solid #8fc1e9;background:#1d4266">owner: T_low ↑P31</span><span style="padding:8px 10px;border-radius:6px;border:1px solid #2e4f6e;background:#12293f;color:#a9c1d6">wait: T_hi(P31) → T_mid(P16)</span></span></div>
+                  <div style="display:grid;grid-template-columns:minmax(80px,110px) minmax(0,1fr);gap:10px;align-items:center"><span style="color:#7fa3c2">semaphore</span><span style="display:flex;gap:6px;flex-wrap:wrap"><span style="padding:8px 10px;border-radius:6px;border:1px solid #2e4f6e;background:#12293f;color:#a9c1d6">count: 0</span><span style="padding:8px 10px;border-radius:6px;border:1px solid #8fc1e9;background:#1d4266">signal → hand-off to T_hi</span></span></div>
+                  <div style="display:grid;grid-template-columns:minmax(80px,110px) minmax(0,1fr);gap:10px;align-items:center"><span style="color:#7fa3c2">queue</span><span style="display:flex;gap:6px;flex-wrap:wrap"><span style="padding:8px 10px;border-radius:6px;border:1px solid #2e4f6e;background:#12293f;color:#a9c1d6">ring[8] · item 12B</span><span style="padding:8px 10px;border-radius:6px;border:1px solid #2e4f6e;background:#12293f;color:#a9c1d6">producers ⇄ consumers</span></span></div>
+                </div>
+              </sc-if>
+            </div>
+          </div>
+          <div style="padding:22px 26px 24px;border-top:1px solid #24405a;position:relative">
+            <h3 style="margin:0 0 8px;font-size:20px;font-weight:600;letter-spacing:-.02em">{{ panelTitle }}</h3>
+            <p style="margin:0;font-size:14.5px;line-height:1.65;color:#a9c1d6;max-width:70ch">{{ panelBody }}</p>
+            <div style="position:absolute;left:0;top:-1px;height:2px;width:100%;background:transparent">{{ progressBar }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KERNEL DETAILS -->
+    <div data-reveal="1" style="margin-top:clamp(40px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px">
+      <details style="border:1px solid #24405a;border-radius:14px;background:#12293f;padding:0 22px">
+        <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;font-size:16px;font-weight:600"><span>Port boundary &amp; build</span><span data-plus="1" aria-hidden="true" style="font-size:24px;font-weight:300;color:#7f9fbc;transition:transform .25s">+</span></summary>
+        <div style="padding:0 0 22px;color:#a9c1d6;line-height:1.7;font-size:14.5px;display:flex;flex-direction:column;gap:10px">
+          <p style="margin:0">Public API exposes opaque <code style="font-family:'JetBrains Mono',monospace;font-size:.86em;background:rgba(143,193,233,.16);border-radius:4px;padding:2px 5px">task_handle_t</code>, <code style="font-family:'JetBrains Mono',monospace;font-size:.86em;background:rgba(143,193,233,.16);border-radius:4px;padding:2px 5px">mutex_handle_t</code>… backed by structs in internal headers only. Context switch, timer, and interrupt control live behind <code style="font-family:'JetBrains Mono',monospace;font-size:.86em;background:rgba(143,193,233,.16);border-radius:4px;padding:2px 5px">port_*</code> under <code style="font-family:'JetBrains Mono',monospace;font-size:.86em;background:rgba(143,193,233,.16);border-radius:4px;padding:2px 5px">arch/avr/atmega328p/</code> and <code style="font-family:'JetBrains Mono',monospace;font-size:.86em;background:rgba(143,193,233,.16);border-radius:4px;padding:2px 5px">arch/cortex_m7/nucleo_f767zi/</code>.</p>
+          <p style="margin:0"><code style="font-family:'JetBrains Mono',monospace;font-size:.86em;background:rgba(143,193,233,.16);border-radius:4px;padding:2px 5px">make TARGET=avr|cortex_m7</code>. A dedicated sleep list wakes delayed tasks back onto the ready queue when their tick count elapses.</p>
+        </div>
+      </details>
+      <details style="border:1px solid #24405a;border-radius:14px;background:#12293f;padding:0 22px">
+        <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;font-size:16px;font-weight:600"><span>Priority inheritance, done right</span><span data-plus="1" aria-hidden="true" style="font-size:24px;font-weight:300;color:#7f9fbc;transition:transform .25s">+</span></summary>
+        <div style="padding:0 0 22px;color:#a9c1d6;line-height:1.7;font-size:14.5px;display:flex;flex-direction:column;gap:10px">
+          <p style="margin:0">Mutex wait lists are priority-ordered. A task holding several mutexes gets its priority recomputed on each unlock as the max of its base priority and any remaining boosts — never a flat reset. Protocol is selectable per mutex.</p>
+          <p style="margin:0;border-left:2px solid #f0c46a;padding-left:12px">Priority ceiling protocol is designed into the interface but not implemented.</p>
+        </div>
+      </details>
+      <details style="border:1px solid rgba(210,154,43,.35);border-radius:14px;background:rgba(210,154,43,.08);padding:0 22px">
+        <summary style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;font-size:16px;font-weight:600"><span style="display:flex;align-items:center;gap:10px">Still open <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;color:#f0c46a;background:rgba(210,154,43,.22);border-radius:999px;padding:3px 8px">2</span></span><span data-plus="1" aria-hidden="true" style="font-size:24px;font-weight:300;color:#f0c46a;transition:transform .25s">+</span></summary>
+        <div style="padding:0 0 22px;color:#d6dfe8;line-height:1.7;font-size:14.5px;display:flex;flex-direction:column;gap:10px">
+          <p style="margin:0"><strong style="color:#e8f1f9;font-weight:600">Timeouts on blocking calls.</strong> Mutex, semaphore, and queue waits currently block indefinitely.</p>
+          <p style="margin:0"><strong style="color:#e8f1f9;font-weight:600">Kernel helpers through SVC.</strong> SVC currently raises/drops privilege via CONTROL rather than dispatching by syscall ID; existing helpers still need routing across that boundary now that tasks can't reach kernel state.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- FAULT LAB -->
+  <section data-screen-label="Fault lab" id="lab" style="max-width:1400px;margin:0 auto;padding:clamp(80px,10vw,140px) clamp(20px,5vw,64px) 0;box-sizing:border-box">
+    <div data-reveal="1" style="background:#102a44;border:1px solid #2a4d6e;color:#e8f2fb;border-radius:22px;padding:clamp(26px,4vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(28px,5vw,64px);align-items:center;box-shadow:0 40px 100px rgba(0,0,0,.4)">
+      <div>
+        <p style="margin:0 0 16px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;color:#9cc4e4">HARDWARE-ENFORCED SAFETY · CORTEX-M7 PORT</p>
+        <h2 style="margin:0 0 16px;font-size:clamp(32px,3.6vw,52px);font-weight:500;letter-spacing:-.04em;line-height:1.02;text-wrap:balance">An out-of-bounds stack write doesn't corrupt memory. <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;color:#9cc4e4">It faults.</span></h2>
+        <p style="margin:0 0 18px;font-size:15.5px;line-height:1.7;color:#c6dcee;text-wrap:pretty;max-width:56ch">Each task's stack is writable only through the sliding active-task MPU region. Write past your bounds and the hardware raises a MemManage fault with the offending address in MMFAR — a genuine stack overflow is distinguishable from any other access violation. A property of the isolation model, not a watermark scan.</p>
+        <p style="margin:0;font-size:13px;color:#8fb3d0">Try it: push frames until <code style="font-family:'JetBrains Mono',monospace;background:rgba(156,196,228,.15);border-radius:4px;padding:2px 6px">task_a</code> runs out of stack. Addresses are illustrative.</p>
+      </div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+          <span style="letter-spacing:.1em;color:#9cc4e4;overflow-wrap:anywhere">SRAM · task_a region 0x20010000–0x20010200</span>
+          <span style="padding:4px 10px;border-radius:999px;background:{{ labBadgeBg }};color:{{ labBadgeC }};font-weight:500;transition:background .3s">{{ labBadge }}</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:5px">
+          <div style="display:flex;justify-content:space-between;gap:10px;padding:10px 14px;border:1px solid rgba(156,196,228,.3);border-radius:8px;color:#9cc4e4"><span>0x20010200 · other task</span><span>no access</span></div>
+          <sc-for list="{{ slots }}" as="slot" hint-placeholder-count="4">
+            <div style="display:flex;justify-content:space-between;gap:10px;padding:10px 14px;border:1px solid {{ slot.border }};border-radius:8px;background:{{ slot.bg }};color:{{ slot.color }};transition:background .3s,border-color .3s;flex-wrap:wrap"><span>{{ slot.addr }} · {{ slot.label }}</span><span>{{ slot.state }}</span></div>
+          </sc-for>
+          <div style="display:flex;justify-content:space-between;gap:10px;padding:10px 14px;border:1px solid {{ guardBorder }};border-radius:8px;background:{{ guardBg }};color:{{ guardC }};animation:{{ guardAnim }}"><span>0x2000FFFC · below bounds</span><span>{{ guardState }}</span></div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px">
+          <div style="padding:10px 12px;border-radius:8px;background:rgba(255,255,255,.05)"><span style="display:block;color:#8fb3d0;font-size:11px;letter-spacing:.08em">PSP</span><span style="color:#fff">{{ regSP }}</span></div>
+          <div style="padding:10px 12px;border-radius:8px;background:rgba(255,255,255,.05)"><span style="display:block;color:#8fb3d0;font-size:11px;letter-spacing:.08em">MMFAR</span><span style="color:{{ regFaultC }}">{{ regMMFAR }}</span></div>
+          <div style="padding:10px 12px;border-radius:8px;background:rgba(255,255,255,.05)"><span style="display:block;color:#8fb3d0;font-size:11px;letter-spacing:.08em">CFSR</span><span style="color:{{ regFaultC }}">{{ regCFSR }}</span></div>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button sc-camel-on-click="{{ pushFrame }}" disabled="{{ faulted }}" style="border:0;border-radius:999px;padding:11px 18px;background:{{ pushBg }};color:{{ pushC }};font-family:'Instrument Sans',sans-serif;font-size:14px;font-weight:600;transition:background .2s,transform .2s" style-hover="transform:translateY(-1px)">{{ pushLabel }}</button>
+          <button sc-camel-on-click="{{ resetLab }}" style="border:1px solid rgba(156,196,228,.4);border-radius:999px;padding:11px 18px;background:transparent;color:#cfe3f4;font-family:'Instrument Sans',sans-serif;font-size:14px;font-weight:600" style-hover="background:rgba(255,255,255,.08)">Reset</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 NOTES -->
+  <section data-screen-label="Engineering notes" id="notes" style="max-width:1400px;margin:0 auto;padding:clamp(80px,10vw,140px) clamp(20px,5vw,64px) 0;box-sizing:border-box">
+    <div style="display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,80px);border-top:1px solid #4a7398;padding-top:28px">
+      <div style="flex:1 1 220px;display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;color:#8fb3d4">
+        <span>02 — ENGINEERING NOTES</span>
+        <span style="color:#7f9fbc">FOUND ON HARDWARE · FIXED WITH GDB</span>
+      </div>
+      <div style="flex:3 1 480px;min-width:0" data-reveal="1">
+        <h2 style="margin:0 0 18px;font-size:clamp(40px,5.2vw,78px);line-height:1;letter-spacing:-.045em;font-weight:500">Real hardware. <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;color:#8fc1e9">Real debugging.</span></h2>
+        <p style="margin:0;max-width:60ch;font-size:17px;line-height:1.7;color:#a9c1d6">The interesting part is what breaks. Four bugs from bringing Fleurr up on two very different architectures — hover or tap to read each one.</p>
+      </div>
+    </div>
+    <div data-reveal="1" style="margin-top:clamp(40px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:24px;align-items:start">
+      <div role="list" style="display:flex;flex-direction:column;border-top:1px solid #24405a">
+        <button role="listitem" sc-camel-on-mouse-enter="{{ note0 }}" sc-camel-on-click="{{ note0 }}" style="text-align:left;background:{{ n0Bg }};border:0;border-bottom:1px solid #24405a;padding:22px 18px;display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:12px;align-items:center;transition:background .25s;border-radius:10px 10px 0 0"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7f9fbc">01</span><span style="font-size:clamp(17px,1.5vw,21px);font-weight:500;letter-spacing:-.02em;color:{{ n0C }}">When the stack frame doesn't match.</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:#8fb3d4">AVR</span></button>
+        <button role="listitem" sc-camel-on-mouse-enter="{{ note1 }}" sc-camel-on-click="{{ note1 }}" style="text-align:left;background:{{ n1Bg }};border:0;border-bottom:1px solid #24405a;padding:22px 18px;display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:12px;align-items:center;transition:background .25s"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7f9fbc">02</span><span style="font-size:clamp(17px,1.5vw,21px);font-weight:500;letter-spacing:-.02em;color:{{ n1C }}">A 32-bit bitmap, a 16-bit intrinsic.</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:#8fb3d4">AVR</span></button>
+        <button role="listitem" sc-camel-on-mouse-enter="{{ note2 }}" sc-camel-on-click="{{ note2 }}" style="text-align:left;background:{{ n2Bg }};border:0;border-bottom:1px solid #24405a;padding:22px 18px;display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:12px;align-items:center;transition:background .25s"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7f9fbc">03</span><span style="font-size:clamp(17px,1.5vw,21px);font-weight:500;letter-spacing:-.02em;color:{{ n2C }}">Garbage priorities in the ready queue.</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:#8fb3d4">KERNEL</span></button>
+        <button role="listitem" sc-camel-on-mouse-enter="{{ note3 }}" sc-camel-on-click="{{ note3 }}" style="text-align:left;background:{{ n3Bg }};border:0;border-bottom:1px solid #24405a;padding:22px 18px;display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:12px;align-items:center;transition:background .25s;border-radius:0 0 10px 10px"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7f9fbc">04</span><span style="font-size:clamp(17px,1.5vw,21px);font-weight:500;letter-spacing:-.02em;color:{{ n3C }}">Startup code is part of the system.</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:#8fb3d4">CORTEX-M7</span></button>
+      </div>
+      <div style="position:sticky;top:84px;border:1px solid #2a4d6e;border-radius:18px;background:#12293f;padding:clamp(24px,3vw,36px);box-shadow:0 24px 60px rgba(0,0,0,.35);min-height:320px;display:flex;flex-direction:column;gap:16px">
+        <div style="display:flex;justify-content:space-between;gap:12px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;color:#8fb3d4"><span>NOTE {{ noteIndex }} / 04</span><span>{{ noteTag }}</span></div>
+        <h3 style="margin:0;font-size:clamp(24px,2.4vw,32px);font-weight:500;letter-spacing:-.03em;line-height:1.15">{{ noteTitle }}</h3>
+        <p style="margin:0;color:#a9c1d6;line-height:1.7;font-size:15.5px">{{ noteBody }}</p>
+        <div style="margin-top:auto;padding:14px 16px;border-radius:10px;background:#1d4266;display:grid;grid-template-columns:auto 1fr;gap:12px;font-size:14px;line-height:1.6;color:#c9dbea"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8fc1e9;padding-top:4px">HOW</span><span>{{ noteHow }}</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 TOOLING + ROADMAP -->
+  <section data-screen-label="Tooling and roadmap" id="tooling" style="max-width:1400px;margin:0 auto;padding:clamp(80px,10vw,140px) clamp(20px,5vw,64px) 0;box-sizing:border-box">
+    <div style="display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,80px);border-top:1px solid #4a7398;padding-top:28px">
+      <div style="flex:1 1 220px;display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;color:#8fb3d4">
+        <span>03 — TOOLING &amp; ROADMAP</span>
+        <span style="color:#7f9fbc">AROUND THE KERNEL, AND ON TOP OF IT</span>
+      </div>
+      <div style="flex:3 1 480px;min-width:0" data-reveal="1">
+        <h2 style="margin:0;font-size:clamp(40px,5.2vw,78px);line-height:1;letter-spacing:-.045em;font-weight:500;text-wrap:balance">Flash it from a terminal. <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;color:#8fc1e9">Then put the kernel to work.</span></h2>
+      </div>
+    </div>
+
+    <div data-reveal="1" ref="{{ termRef }}" style="margin-top:clamp(40px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:24px;align-items:stretch">
+      <div style="border:1px solid #24405a;border-radius:18px;background:#12293f;padding:clamp(24px,3vw,36px);display:flex;flex-direction:column">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;color:#8fb3d4"><span>AVR_SERIAL · HARDWARE TOOLING</span><span style="display:inline-flex;align-items:center;gap:8px;font-family:'Instrument Sans',sans-serif;letter-spacing:0;font-weight:600;color:#8fe0b4;background:rgba(47,159,111,.18);border-radius:999px;padding:4px 10px"><span style="width:6px;height:6px;border-radius:50%;background:#2f9f6f"></span>Implemented</span></div>
+        <h3 style="margin:20px 0 12px;font-size:clamp(28px,2.8vw,38px);line-height:1.08;letter-spacing:-.035em;font-weight:500">A personal avrdude, built on raw POSIX.</h3>
+        <p style="margin:0 0 18px;color:#a9c1d6;line-height:1.7;text-wrap:pretty">A from-scratch serial and flashing utility. It talks to the port through <code style="font-family:'JetBrains Mono',monospace;font-size:.86em;background:rgba(143,193,233,.16);border-radius:4px;padding:2px 5px">termios</code> and <code style="font-family:'JetBrains Mono',monospace;font-size:.86em;background:rgba(143,193,233,.16);border-radius:4px;padding:2px 5px">ioctl</code> directly, times a DTR reset pulse precisely enough for the Optiboot bootloader to catch it, then programs the chip over the STK500v1 protocol — no serial library, no avrdude. A separate mode streams live ASCII ADC telemetry over UART.</p>
+        <div style="display:flex;gap:7px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:12px"><span style="border:1px solid #2e4f6e;background:#183350;border-radius:6px;padding:5px 9px">POSIX termios</span><span style="border:1px solid #2e4f6e;background:#183350;border-radius:6px;padding:5px 9px">STK500v1</span><span style="border:1px solid #2e4f6e;background:#183350;border-radius:6px;padding:5px 9px">Optiboot</span><span style="border:1px solid #2e4f6e;background:#183350;border-radius:6px;padding:5px 9px">DTR reset</span><span style="border:1px solid #2e4f6e;background:#183350;border-radius:6px;padding:5px 9px">UART telemetry</span></div>
+        <p style="margin:18px 0 0;font-size:13px;color:#7f9fbc;border-left:2px solid #24405a;padding-left:12px">Confirmed target: ATmega328P. Exact command coverage and DTR timing values to be documented.</p>
+        <a href="https://github.com/blackbeltwad" target="_blank" rel="noopener noreferrer" style="margin-top:auto;padding-top:22px;display:inline-block;font-size:14px;font-weight:600;color:#e8f1f9" style-hover="color:#8fc1e9">Explore on GitHub →</a>
+      </div>
+      <div style="border-radius:18px;background:#071522;color:#cfe3f4;padding:0;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 30px 80px rgba(0,0,0,.4)">
+        <div style="display:flex;align-items:center;gap:8px;padding:14px 18px;border-bottom:1px solid rgba(156,196,228,.15);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8fb3d0">
+          <span style="width:10px;height:10px;border-radius:50%;background:#2e4f6e"></span><span style="width:10px;height:10px;border-radius:50%;background:#2e4f6e"></span><span style="width:10px;height:10px;border-radius:50%;background:#2e4f6e"></span>
+          <span style="margin-left:10px">avr_serial — /dev/ttyUSB0</span>
+          <span style="margin-left:auto">SIMULATED SESSION</span>
+        </div>
+        <div style="flex:1;padding:20px 18px;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.75;min-height:260px;display:flex;flex-direction:column;gap:2px">
+          <sc-for list="{{ termLines }}" as="line" hint-placeholder-count="1">
+            <div style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:10px;color:{{ line.color }};overflow-wrap:anywhere"><span style="color:#7fa3c2">{{ line.tag }}</span><span>{{ line.text }}</span></div>
+          </sc-for>
+          <div style="color:#8fb3d0">{{ termCursor }}</div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 18px;border-top:1px solid rgba(156,196,228,.15)">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:#7fa3c2">ILLUSTRATIVE FLOW · DTR → SYNC → WRITE → VERIFY</span>
+          <button sc-camel-on-click="{{ runTerm }}" style="border:1px solid rgba(156,196,228,.4);border-radius:999px;padding:12px 18px;background:rgba(255,255,255,.05);color:#fff;font-family:'Instrument Sans',sans-serif;font-size:13px;font-weight:600" style-hover="background:rgba(255,255,255,.14)">{{ termButton }}</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROADMAP -->
+    <div data-reveal="1" style="margin-top:24px;border:1px solid #2a4d6e;border-radius:18px;background:#12293f;padding:clamp(24px,3vw,36px)">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;color:#8fb3d4"><span>POWERED BY FLEURR · CURRENT FOCUS</span><span style="display:inline-flex;align-items:center;gap:8px;font-family:'Instrument Sans',sans-serif;letter-spacing:0;font-weight:600;color:#8fc1e9;border:1px solid #8fc1e9;border-radius:999px;padding:4px 10px"><span style="width:6px;height:6px;border-radius:50%;background:#8fc1e9;animation:pulse 2.4s infinite"></span>In development</span></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(24px,4vw,48px);margin-top:20px;align-items:start">
+        <div>
+          <h3 style="margin:0 0 12px;font-size:clamp(28px,2.8vw,38px);line-height:1.08;letter-spacing:-.035em;font-weight:500">SD storage, then dynamically loaded, MPU-isolated programs.</h3>
+          <p style="margin:0;color:#a9c1d6;line-height:1.7;text-wrap:pretty">Real I/O workloads running on top of the kernel — an RTOS kernel gaining OS-like capabilities (dynamic loading, isolation, a syscall boundary). Not a general-purpose OS, and not MMU virtual memory. Select a stage to see what's built versus planned.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <button sc-camel-on-click="{{ stage0 }}" style="text-align:left;border:1px solid {{ s0Border }};background:{{ s0Bg }};border-radius:12px;padding:16px 16px;display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:10px;align-items:center;transition:background .25s,border-color .25s"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7f9fbc">01</span><span style="font-size:15px;font-weight:600">SD card driver &amp; upload protocol</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;color:#8fe0b4;background:rgba(47,159,111,.18);border-radius:999px;padding:3px 9px;white-space:nowrap">BUILT · DEBUGGING</span></button>
+          <button sc-camel-on-click="{{ stage1 }}" style="text-align:left;border:1px solid {{ s1Border }};background:{{ s1Bg }};border-radius:12px;padding:16px 16px;display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:10px;align-items:center;transition:background .25s,border-color .25s"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7f9fbc">02</span><span style="font-size:15px;font-weight:600">FatFs filesystem</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;color:#f0c46a;background:rgba(210,154,43,.18);border-radius:999px;padding:3px 9px;white-space:nowrap">IN PROGRESS</span></button>
+          <button sc-camel-on-click="{{ stage2 }}" style="text-align:left;border:1px solid {{ s2Border }};background:{{ s2Bg }};border-radius:12px;padding:16px 16px;display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:10px;align-items:center;transition:background .25s,border-color .25s"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7f9fbc">03</span><span style="font-size:15px;font-weight:600">Dynamic ELF loader &amp; syscall ABI</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;color:#a9c1d6;border:1px dashed #4a7398;border-radius:999px;padding:3px 9px;white-space:nowrap">PLANNED</span></button>
+          <div style="margin-top:6px;padding:18px 20px;border-radius:12px;background:#12293f;border:1px solid #24405a">
+            <div style="display:flex;justify-content:space-between;gap:10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8fb3d4;margin-bottom:8px"><span>STAGE {{ stageIndex }}</span><span>{{ stageStatus }}</span></div>
+            <p style="margin:0;font-size:14.5px;line-height:1.7;color:#a9c1d6">{{ stageBody }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section data-screen-label="Contact" id="contact" style="max-width:1400px;margin:0 auto;padding:clamp(100px,12vw,180px) clamp(20px,5vw,64px) clamp(60px,8vw,100px);box-sizing:border-box">
+    <div data-reveal="1" style="display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,80px);border-top:1px solid #4a7398;padding-top:28px">
+      <div style="flex:1 1 220px;display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;color:#8fb3d4"><span>04 — CONNECT</span><span style="color:#7f9fbc">EMBEDDED · SYSTEMS · COMPILERS</span></div>
+      <div style="flex:3 1 480px;min-width:0">
+        <h2 style="margin:0;font-size:clamp(44px,7vw,110px);font-weight:500;letter-spacing:-.05em;line-height:.98;text-wrap:balance">Good systems start with <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;color:#8fc1e9">good questions.</span></h2>
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-top:40px">
+          <p style="margin:0;color:#a9c1d6;line-height:1.7;max-width:44ch;font-size:17px">Open to embedded, systems, and compiler engineering roles and internships. If you're building close to the hardware, I'd like to hear about it.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a href="https://ca.linkedin.com/in/wadley-moise-46587332b" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;min-height:54px;padding:0 28px;border-radius:999px;background:#8fc1e9;color:#0b1f33;font-size:14px;font-weight:600;transition:transform .25s,background .25s" style-hover="background:#12293f;transform:translateY(-2px)">Connect on LinkedIn ↗</a>
+            <a href="https://github.com/blackbeltwad" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;min-height:54px;padding:0 24px;border-radius:999px;border:1px solid #4a7398;background:transparent;color:#e8f1f9;font-size:14px;font-weight:600;transition:transform .25s" style-hover="border-color:#8fc1e9;transform:translateY(-2px)">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid #24405a;padding:28px clamp(20px,5vw,64px);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+    <a href="#top" style="display:flex;align-items:center;gap:12px;color:#e8f1f9;font-weight:600;font-size:14px"><span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:26px;line-height:1">wm<span style="color:#8fc1e9">.</span></span><span>Wadley Moise</span></a>
+    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;color:#7f9fbc">BUILT WITH CURIOSITY · CLOSE TO THE HARDWARE</span>
+    <a href="#top" style="font-size:13px;color:#a9c1d6" style-hover="color:#e8f1f9">Back to top ↑</a>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;defaultTarget&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;cortex&quot;,&quot;options&quot;:[&quot;cortex&quot;,&quot;avr&quot;],&quot;tsType&quot;:&quot;'cortex' | 'avr'&quot;,&quot;section&quot;:&quot;Architecture explorer&quot;},&quot;autoplay&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Architecture explorer&quot;},&quot;parallax&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;rain&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Hero&quot;}}">
+class Component extends DCLogic {
+  state = { target: null, tab: 'scheduling', auto: true, frames: 0, faulted: false, note: 0, stage: 0, navOn: false, active: '', termIdx: -1, termRunning: false, termDone: false };
+  skyRef = React.createRef(); heroRef = React.createRef(); termRef = React.createRef();
+  TABS = ['scheduling', 'isolation', 'switching', 'sync'];
+  DATA = {
+    cortex: {
+      scheduling: { title: 'The highest priority, in constant time.', body: 'Per-priority intrusive doubly-linked lists plus a 32-bit bitmap. One CLZ instruction finds the highest non-empty bucket, so picking the next task is O(1) across all 32 levels — replacing an earlier O(n) circular-array scheduler. Sleeping tasks live on a separate list.', visual: 'scheduler' },
+      isolation: { title: 'One active task. One sliding MPU region.', body: 'Every task runs unprivileged. PendSV reprograms a single MPU region on each switch so only the active task\u2019s memory is read/write — the FreeRTOS-MPU pattern, without spending a region per task. TCBs, stacks, and primitives live in privileged-only DTCM. SVC is the only way up: it flips CONTROL, not a syscall table (yet).', visual: 'memory' },
+      switching: { title: 'SysTick sets the pace. PendSV makes the switch.', body: 'Tasks run on the Process Stack Pointer from reset. SysTick provides the tick, PendSV performs the switch, the MPU is reprogrammed in the same handler, and EXC_RETURN is handled across the exception boundary so the next task resumes in thread mode on PSP.', visual: 'cortexFlow' },
+      sync: { title: 'Mutexes, semaphores, and queues — priority-aware.', body: 'Mutexes inherit priority through priority-ordered wait lists and recompute correctly when a task holds several. Semaphores hand off directly to the highest waiter on signal. Queues are generic ring buffers with separate producer and consumer wait lists. All debugged on both ports.', visual: 'sync' }
+    },
+    avr: {
+      scheduling: { title: 'Same scheduler, 8-bit target.', body: 'The identical priority-bucketed ready queue runs on the ATmega328P. Bring-up surfaced a 16-bit vs 32-bit CLZ mismatch in avr-gcc that silently returned wrong results against the 32-bit bitmap — found and fixed on live hardware.', visual: 'scheduler' },
+      isolation: { title: 'Same kernel API. No hardware MPU.', body: 'The AVR port shares the public API, opaque handles, and all three synchronization primitives with the Cortex-M7 build. The ATmega328P has no memory protection unit, so sliding-region isolation and hardware fault-on-overflow belong to the Cortex-M7 port only.', visual: 'avrMemory' },
+      switching: { title: 'An interrupt, a stack frame, a new task.', body: 'TIMER1_COMPA_vect drives the context switch with a from-scratch stack-frame format. The frame layout and AVR\u2019s actual RETI byte-pop order were built and debugged with live hardware and GDB tracing — the documentation-based assumption was wrong.', visual: 'avrFlow' },
+      sync: { title: 'The same primitives, byte for byte.', body: 'Priority-inheriting mutexes, hand-off semaphores, and generic queues compile unchanged for AVR through the port boundary. Debugging them on a 2 KB-SRAM part is where the wait-list and priority-recompute logic was hardened.', visual: 'sync' }
+    }
+  };
+  NOTES = [
+    { tag: 'AVR · CONTEXT SWITCH', title: 'When the stack frame doesn\u2019t match.', body: 'First-task startup and normal context-switch restore used incompatible stack-frame formats. The first task ran fine; the second or third crashed. Live tracing also exposed AVR\u2019s actual RETI byte-pop order, which contradicted the documentation-based assumptions the frame format was built on.', how: 'Single-stepping the restore path in GDB on the board and diffing the SP-relative layout against the start-task path.' },
+    { tag: 'AVR · SCHEDULER', title: 'A 32-bit bitmap, a 16-bit intrinsic.', body: 'On avr-gcc, __builtin_clz resolves to a 16-bit intrinsic. Applied to the 32-bit priority bitmap it silently returned the wrong index — the scheduler picked the wrong task with no error anywhere.', how: 'Watching the ready-queue selection diverge from the bitmap contents in a live GDB session, then reading the generated assembly.' },
+    { tag: 'KERNEL · INIT ORDER', title: 'Garbage priorities in the ready queue.', body: 'An initialization-order bug linked tasks into the priority-bucketed ready queue before their priority fields were set, so they landed in buckets chosen by uninitialized memory.', how: 'Inspecting the queue structure in GDB while stepping through task creation — the bucket index didn\u2019t match the requested priority.' },
+    { tag: 'CORTEX-M7 · STARTUP', title: 'Startup code is part of the system.', body: 'The Cortex-M7 port initially skipped the .data copy from flash and the .bss zeroing, leaving every global reading whatever RAM held at reset. Without a vendor startup file, that\u2019s the kernel\u2019s job.', how: 'Globals showed nonsense values immediately after reset; comparing the memory map against the linker script pointed at the missing copy loop.' }
+  ];
+  STAGES = [
+    { status: 'BUILT · ACTIVELY DEBUGGING', body: 'Low-level SPI SD driver (SPI + DMA) built directly on the Fleurr kernel: card initialization sequence, block-level read/write, card identification, and a CRC16 sequence/ACK upload protocol for transferring files onto the card.' },
+    { status: 'IN PROGRESS / PLANNED', body: 'FatFs integration to give the storage layer real files and paths. A concurrent logging task built on Fleurr mutexes and queues is on the roadmap, not yet a shipped feature.' },
+    { status: 'PLANNED — THE LONG-TERM FLAGSHIP', body: 'Load -fPIE ELF32 binaries from the card into aligned power-of-two SRAM blocks, applying R_ARM_RELATIVE relocations from PT_DYNAMIC. Programs run as unprivileged, MPU-isolated tasks with a guard region — the same sliding-region mechanism the kernel already uses. An SVC ABI (write / read / delay / exit) is the only boundary they can reach, with pointer validation on every call; sys_exit marks a task dead and an idle/reaper task frees it. Load, delete, run, and view binaries by path.' }
+  ];
+  TERM = [
+    { tag: '$', text: 'avr_serial --port /dev/ttyUSB0 --flash blink.hex', color: '#fff' },
+    { tag: 'dtr', text: 'pulse reset line → target enters bootloader window', color: '#cfe3f4' },
+    { tag: 'sync', text: 'handshake with Optiboot … in sync', color: '#cfe3f4' },
+    { tag: 'sig', text: 'device signature 1E 95 0F → ATmega328P', color: '#cfe3f4' },
+    { tag: 'write', text: 'page 0x0000  128 B  ████████  ok', color: '#cfe3f4' },
+    { tag: 'write', text: 'page 0x0080  128 B  ████████  ok', color: '#cfe3f4' },
+    { tag: 'write', text: 'page 0x0100  128 B  ████████  ok', color: '#cfe3f4' },
+    { tag: 'verify', text: 'read back 384 B … match', color: '#cfe3f4' },
+    { tag: 'done', text: 'leaving programming mode — device running', color: '#8fe0b4' }
+  ];
+  rainRef = React.createRef();
+  startRain() {
+    const cv = this.rainRef.current, hero = this.heroRef.current;
+    if (!cv || !hero || !(this.props.rain ?? true) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const ctx = cv.getContext('2d');
+    let W = 0, H = 0, dpr = Math.min(devicePixelRatio || 1, 2);
+    const resize = () => { W = hero.clientWidth; H = hero.clientHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); };
+    resize(); this.onRainResize = resize; window.addEventListener('resize', resize);
+    const mobile = W < 700;
+    // three depth layers: far (thin, slow, faint) → near (long, fast, brighter)
+    const layers = [
+      { n: mobile ? 90 : 220, len: [10, 18], spd: [520, 700], w: .6, a: .18, wind: .12 },
+      { n: mobile ? 60 : 140, len: [18, 30], spd: [780, 980], w: .9, a: .3, wind: .16 },
+      { n: mobile ? 30 : 70,  len: [28, 46], spd: [1050, 1350], w: 1.3, a: .42, wind: .2 }
+    ];
+    const rnd = (a, b) => a + Math.random() * (b - a);
+    const drops = [];
+    layers.forEach((L) => { for (let i = 0; i < L.n; i++) drops.push({ L, x: rnd(-W * .2, W * 1.2), y: rnd(-H, H), len: rnd(L.len[0], L.len[1]), spd: rnd(L.spd[0], L.spd[1]), f: rnd(.7, 1) }); });
+    const splashes = [];
+    let gust = 0, gustT = 0, last = performance.now(), visible = true;
+    this.rainObs = new IntersectionObserver((es) => { visible = es[0].isIntersecting; }, { threshold: 0 });
+    this.rainObs.observe(hero);
+    const frame = (now) => {
+      this.rainRAF = requestAnimationFrame(frame);
+      if (!visible || document.hidden) { last = now; return; }
+      const dt = Math.min((now - last) / 1000, .05); last = now;
+      gustT -= dt; if (gustT <= 0) { gust = rnd(-.25, .45); gustT = rnd(2, 5); }
+      ctx.clearRect(0, 0, W, H);
+      ctx.lineCap = 'round';
+      for (const d of drops) {
+        const wind = d.L.wind + gust * .5;
+        d.y += d.spd * dt; d.x += d.spd * wind * dt;
+        if (d.y - d.len > H) {
+          if (d.L.w > 1 && Math.random() < .35) splashes.push({ x: d.x, y: H - rnd(0, 6), r: 1, t: 0 });
+          d.y = rnd(-d.len * 4, -d.len); d.x = rnd(-W * .2, W * 1.2);
+        }
+        const dx = -wind * d.len, dy = -d.len;
+        const g = ctx.createLinearGradient(d.x + dx, d.y + dy, d.x, d.y);
+        g.addColorStop(0, 'rgba(210,228,248,0)'); g.addColorStop(1, `rgba(220,235,252,${d.L.a * d.f})`);
+        ctx.strokeStyle = g; ctx.lineWidth = d.L.w;
+        ctx.beginPath(); ctx.moveTo(d.x + dx, d.y + dy); ctx.lineTo(d.x, d.y); ctx.stroke();
+      }
+      for (let i = splashes.length - 1; i >= 0; i--) {
+        const s = splashes[i]; s.t += dt * 4; if (s.t >= 1) { splashes.splice(i, 1); continue; }
+        ctx.strokeStyle = `rgba(220,235,252,${.35 * (1 - s.t)})`; ctx.lineWidth = .8;
+        ctx.beginPath(); ctx.ellipse(s.x, s.y, 2 + s.t * 10, .8 + s.t * 3, 0, 0, Math.PI * 2); ctx.stroke();
+      }
+    };
+    this.rainRAF = requestAnimationFrame(frame);
+  }
+  componentDidMount() {
+    this.startRain();
+    const hero = this.heroRef.current, sky = this.skyRef.current;
+    if (hero && sky && matchMedia('(pointer: fine)').matches) {
+      this.onMove = (e) => { if (!(this.props.parallax ?? true)) return; const r = hero.getBoundingClientRect(); sky.style.translate = `${((e.clientX - r.left) / r.width - .5) * 18}px ${((e.clientY - r.top) / r.height - .5) * 12}px`; };
+      this.onLeave = () => { sky.style.translate = '0px 0px'; };
+      hero.addEventListener('pointermove', this.onMove); hero.addEventListener('pointerleave', this.onLeave);
+    }
+    this.onScroll = () => { const h = hero ? hero.offsetHeight : 700; const on = window.scrollY > h * .7; if (on !== this.state.navOn) this.setState({ navOn: on }); };
+    window.addEventListener('scroll', this.onScroll, { passive: true }); this.onScroll();
+    const secs = ['work', 'lab', 'notes', 'tooling', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
+    this.secObs = new IntersectionObserver((es) => { es.forEach(e => { if (e.isIntersecting) this.setState({ active: e.target.id }); }); }, { rootMargin: '-40% 0px -55% 0px' });
+    secs.forEach(s => this.secObs.observe(s));
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduce) {
+      const els = [...document.querySelectorAll('[data-reveal]')];
+      this.revObs = new IntersectionObserver((es) => { es.forEach(e => { if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'none'; this.revObs.unobserve(e.target); } }); }, { threshold: .12 });
+      els.forEach(el => { const r = el.getBoundingClientRect(); if (r.top > innerHeight) { el.style.opacity = '0'; el.style.transform = 'translateY(28px)'; } this.revObs.observe(el); });
+    }
+    if (this.termRef.current) {
+      this.termObs = new IntersectionObserver((es) => { if (es.some(e => e.isIntersecting) && this.state.termIdx < 0) { this.runTerm(); this.termObs.disconnect(); } }, { threshold: .4 });
+      this.termObs.observe(this.termRef.current);
+    }
+    this.startAuto();
+  }
+  componentWillUnmount() {
+    cancelAnimationFrame(this.rainRAF); if (this.onRainResize) window.removeEventListener('resize', this.onRainResize); if (this.rainObs) this.rainObs.disconnect();
+    const hero = this.heroRef.current;
+    if (hero && this.onMove) { hero.removeEventListener('pointermove', this.onMove); hero.removeEventListener('pointerleave', this.onLeave); }
+    window.removeEventListener('scroll', this.onScroll);
+    [this.secObs, this.revObs, this.termObs].forEach(o => o && o.disconnect());
+    clearInterval(this.autoT); clearInterval(this.termT);
+  }
+  startAuto() {
+    clearInterval(this.autoT);
+    if (!(this.props.autoplay ?? true) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    this.autoT = setInterval(() => { if (!this.state.auto) return; const i = this.TABS.indexOf(this.state.tab); this.setState({ tab: this.TABS[(i + 1) % this.TABS.length] }); }, 7000);
+  }
+  pick(tab) { this.setState({ tab, auto: false }); clearInterval(this.autoT); }
+  runTerm = () => {
+    clearInterval(this.termT);
+    this.setState({ termIdx: 0, termRunning: true, termDone: false });
+    this.termT = setInterval(() => {
+      const n = this.state.termIdx + 1;
+      if (n >= this.TERM.length) { clearInterval(this.termT); this.setState({ termRunning: false, termDone: true }); return; }
+      this.setState({ termIdx: n });
+    }, 520);
+  };
+  renderVals() {
+    const { tab, frames, faulted, note, stage, navOn, active, termIdx, termRunning, termDone, auto } = this.state;
+    const target = this.state.target || this.props.defaultTarget || 'cortex';
+    const entry = this.DATA[target][tab];
+    const seg = (on) => on ? { bg: '#8fc1e9', c: '#0b1f33' } : { bg: 'transparent', c: '#a9c1d6' };
+    const ct = seg(target === 'cortex'), av = seg(target === 'avr');
+    const tb = (k) => tab === k ? { bg: '#1d4266', c: '#e8f1f9', a: 1 } : { bg: '#12293f', c: '#c9dbea', a: 0 };
+    const S = tb('scheduling'), I = tb('isolation'), W = tb('switching'), Y = tb('sync');
+    const autoplay = auto && (this.props.autoplay ?? true);
+    const progressBar = autoplay ? React.createElement('div', { key: target + tab, style: { height: '100%', background: '#8fc1e9', animation: 'progress 7s linear forwards' } }) : null;
+    const navA = (id) => active === id ? { c: '#e8f1f9', bg: 'rgba(143,193,233,.18)' } : { c: '#a9c1d6', bg: 'transparent' };
+    const nw = navA('work'), nl = navA('lab'), nn = navA('notes'), nt = navA('tooling');
+    const base = 0x20010200, cap = 4;
+    const slots = Array.from({ length: cap }, (_, i) => {
+      const filled = i < frames, cur = i === frames - 1 && !faulted;
+      return { addr: '0x' + (base - (i + 1) * 0x80).toString(16).toUpperCase(), label: filled ? `frame ${i}` : 'free', state: filled ? (cur ? 'sp →' : 'in use') : 'unpriv R/W', border: filled ? '#9cc4e4' : 'rgba(156,196,228,.35)', bg: filled ? 'rgba(156,196,228,.16)' : 'transparent', color: filled ? '#fff' : '#9cc4e4' };
+    });
+    const sp = faulted ? 0x2000FFFC : base - frames * 0x80;
+    const hex = (n) => '0x' + n.toString(16).toUpperCase().padStart(8, '0');
+    const nItems = this.NOTES.map((_, i) => i === note ? { bg: '#1d4266', c: '#e8f1f9' } : { bg: 'transparent', c: '#c9dbea' });
+    const sItems = this.STAGES.map((_, i) => i === stage ? { b: '#8fc1e9', bg: '#1d4266' } : { b: '#24405a', bg: '#12293f' });
+    const termLines = termIdx < 0 ? [] : this.TERM.slice(0, termIdx + 1);
+    const items = ['ARM CORTEX-M7', 'AVR ATMEGA328P', 'PREEMPTIVE RTOS KERNEL', 'MPU ISOLATION', 'PRIORITY INHERITANCE', 'O(1) SCHEDULER', 'POSIX TERMIOS', 'STK500V1', 'SPI + DMA', 'ELF32 LOADER', 'GDB ON HARDWARE', 'NO HAL'];
+    const track = [...items, ...items].flatMap((t, i) => [React.createElement('span', { key: i }, t), React.createElement('span', { key: 'd' + i, style: { color: '#7f9fbc' } }, '◆')]);
+    return {
+      skyRef: this.skyRef, heroRef: this.heroRef, termRef: this.termRef, rainRef: this.rainRef,
+      marquee: React.createElement('div', { style: { display: 'flex', gap: 28, width: 'max-content', animation: 'marquee 60s linear infinite' } }, track),
+      navY: navOn ? '0' : '-24px', navOpacity: navOn ? 1 : 0, navEvents: navOn ? 'auto' : 'none',
+      navWorkC: nw.c, navWorkBg: nw.bg, navLabC: nl.c, navLabBg: nl.bg, navNotesC: nn.c, navNotesBg: nn.bg, navToolC: nt.c, navToolBg: nt.bg,
+      isCortex: target === 'cortex', isAvr: target === 'avr', cortexBg: ct.bg, cortexC: ct.c, avrBg: av.bg, avrC: av.c,
+      pickCortex: () => this.setState({ target: 'cortex' }), pickAvr: () => this.setState({ target: 'avr' }),
+      isSched: tab === 'scheduling', isIso: tab === 'isolation', isSw: tab === 'switching', isSync: tab === 'sync',
+      schedBg: S.bg, schedC: S.c, schedArrow: S.a, isoBg: I.bg, isoC: I.c, isoArrow: I.a, swBg: W.bg, swC: W.c, swArrow: W.a, syncBg: Y.bg, syncC: Y.c, syncArrow: Y.a,
+      pickSched: () => this.pick('scheduling'), pickIso: () => this.pick('isolation'), pickSw: () => this.pick('switching'), pickSync: () => this.pick('sync'),
+      hoverSched: () => this.pick('scheduling'), hoverIso: () => this.pick('isolation'), hoverSw: () => this.pick('switching'), hoverSync: () => this.pick('sync'),
+      autoLabel: autoplay ? 'AUTO-CYCLING · HOVER TO TAKE OVER' : (target === 'cortex' ? 'NUCLEO-F767ZI · STM32 CORTEX-M7' : 'ATMEGA328P · 8-BIT AVR'),
+      vScheduler: entry.visual === 'scheduler', vMemory: entry.visual === 'memory', vAvrMemory: entry.visual === 'avrMemory', vCortexFlow: entry.visual === 'cortexFlow', vAvrFlow: entry.visual === 'avrFlow', vSync: entry.visual === 'sync',
+      panelTitle: entry.title, panelBody: entry.body, progressBar,
+      slots, faulted,
+      labBadge: faulted ? 'MEMMANAGE FAULT' : frames === cap ? 'STACK FULL' : 'RUNNING · UNPRIVILEGED', labBadgeBg: faulted ? 'rgba(226,96,72,.25)' : 'rgba(47,159,111,.2)', labBadgeC: faulted ? '#ffb9a8' : '#8fe0b4',
+      guardBorder: faulted ? '#e26048' : 'rgba(156,196,228,.2)', guardBg: faulted ? 'rgba(226,96,72,.18)' : 'transparent', guardC: faulted ? '#ffd9cf' : '#7fa3c2', guardState: faulted ? 'write blocked → fault' : 'not mapped', guardAnim: faulted ? 'faultflash .8s ease-out' : 'none',
+      regSP: hex(sp), regMMFAR: faulted ? hex(0x2000FFFC) : '—', regCFSR: faulted ? 'MMARVALID · DACCVIOL' : '—', regFaultC: faulted ? '#ffb9a8' : '#fff',
+      pushLabel: faulted ? 'Faulted — task_a halted' : frames === cap ? 'Push one more frame' : `Push frame ${frames}`,
+      pushBg: faulted ? 'rgba(255,255,255,.12)' : '#8fc1e9', pushC: faulted ? '#8fb3d0' : '#0b1f33',
+      pushFrame: () => { if (faulted) return; if (frames >= cap) this.setState({ faulted: true }); else this.setState({ frames: frames + 1 }); },
+      resetLab: () => this.setState({ frames: 0, faulted: false }),
+      note0: () => this.setState({ note: 0 }), note1: () => this.setState({ note: 1 }), note2: () => this.setState({ note: 2 }), note3: () => this.setState({ note: 3 }),
+      n0Bg: nItems[0].bg, n0C: nItems[0].c, n1Bg: nItems[1].bg, n1C: nItems[1].c, n2Bg: nItems[2].bg, n2C: nItems[2].c, n3Bg: nItems[3].bg, n3C: nItems[3].c,
+      noteIndex: '0' + (note + 1), noteTag: this.NOTES[note].tag, noteTitle: this.NOTES[note].title, noteBody: this.NOTES[note].body, noteHow: this.NOTES[note].how,
+      stage0: () => this.setState({ stage: 0 }), stage1: () => this.setState({ stage: 1 }), stage2: () => this.setState({ stage: 2 }),
+      s0Border: sItems[0].b, s0Bg: sItems[0].bg, s1Border: sItems[1].b, s1Bg: sItems[1].bg, s2Border: sItems[2].b, s2Bg: sItems[2].bg,
+      stageIndex: '0' + (stage + 1), stageStatus: this.STAGES[stage].status, stageBody: this.STAGES[stage].body,
+      termLines, runTerm: this.runTerm, termButton: termRunning ? 'Running…' : termDone ? 'Replay session' : 'Run flash session',
+      termCursor: React.createElement('span', { style: { animation: 'blink 1.1s steps(1) infinite' } }, termRunning ? '' : '▌')
+    };
+  }
+}
+</script>
+
+
+</body></html>
